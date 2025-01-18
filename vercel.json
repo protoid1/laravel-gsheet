@@ -10,6 +10,18 @@
         {
             "src": "/(.*)",
             "dest": "/api/index.php"
+        },
+        {
+            "src": "/css/(.*)",
+            "dest": "/public/css/$1"
+        },
+        {
+            "src": "/js/(.*)",
+            "dest": "/public/js/$1"
+        },
+        {
+            "src": "/assets/(.*)",
+            "dest": "/public/assets/$1"
         }
     ],
     "env": {
@@ -25,6 +37,8 @@
         "VIEW_COMPILED_PATH": "/tmp",
         "CACHE_DRIVER": "array",
         "LOG_CHANNEL": "stderr",
-        "SESSION_DRIVER": "cookie"
+        "SESSION_DRIVER": "cookie",
+        "DB_CONNECTION": "sqlite",
+        "DB_DATABASE": "/tmp/database.sqlite"
     }
 }
