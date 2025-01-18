@@ -12,12 +12,12 @@
             "dest": "/api/index.php"
         },
         {
-            "src": "/css/(.*)",
-            "dest": "/public/css/$1"
+            "src": "/css/filament/(.*)",
+            "dest": "/public/css/filament/$1"
         },
         {
-            "src": "/js/(.*)",
-            "dest": "/public/js/$1"
+            "src": "/js/filament/(.*)",
+            "dest": "/public/js/filament/$1"
         },
         {
             "src": "/assets/(.*)",
