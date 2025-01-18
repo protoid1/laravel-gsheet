@@ -16,7 +16,7 @@
         "APP_ENV": "production",
         "APP_DEBUG": "false",
         "APP_URL": "https://laravel-gsheet.vercel.app",
-        "APP_KEY": "base64:5iQD43fVPenHyD473jTGutcLrHRHbYd4L0yxkbKAsa4=",
+        "APP_KEY": "base64:OKWQ2iI3Y9HiiwcdQqdWj5zGPcaT7bD6zbQ3coWGcns=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
         "APP_EVENTS_CACHE": "/tmp/events.php",
         "APP_PACKAGES_CACHE": "/tmp/packages.php",
