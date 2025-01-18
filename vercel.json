@@ -40,5 +40,6 @@
         "SESSION_DRIVER": "cookie",
         "DB_CONNECTION": "sqlite",
         "DB_DATABASE": "/tmp/database.sqlite"
-    }
+    },
+    "outputDirectory": "public"
 }
