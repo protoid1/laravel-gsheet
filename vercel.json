@@ -5,12 +5,10 @@
             "runtime": "vercel-php@0.7.3"
         }
     },
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/api/index.php"
-        }
-    ],
+    "rewrites": [
+    { "source": "/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
+    { "source": "/(.*)", "destination": "/api/index.php" }
+  ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
