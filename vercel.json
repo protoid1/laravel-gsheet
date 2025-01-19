@@ -2,7 +2,7 @@
     "version": 2,
     "functions": {
         "api/index.php": {
-            "runtime": "vercel-php@0.6.0"
+            "runtime": "vercel-php@0.4.0"
         }
     },
     "routes": [
@@ -40,12 +40,9 @@
         "DB_CONNECTION": "sqlite",
         "DB_DATABASE": "/tmp/database.sqlite"
     },
-    "build": {
-        "env": {
-            "COMPOSER_ALLOW_SUPERUSER": "1",
-            "COMPOSER_HOME": "/tmp/composer"
-        },
-        "command": "composer install --no-dev --optimize-autoloader"
-    },
-    "outputDirectory": "public"
+    "outputDirectory": "public",
+    "rewrites": [
+    { "source": "/favicon.ico", "destination": "https://juicy.vercel.app/favicon.ico" },
+    { "source": "/(.*)", "destination": "/api/index.php" }
+  ]
 }
