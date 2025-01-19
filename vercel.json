@@ -40,5 +40,8 @@
         "DB_CONNECTION": "sqlite",
         "DB_DATABASE": "/tmp/database.sqlite"
     },
+    "commands": [
+      "composer install --no-dev --optimize-autoloader"
+    ],
     "outputDirectory": "public"
 }
