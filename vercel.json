@@ -1,6 +1,5 @@
 {
     "version": 2,
-    "framework": null,
     "functions": {
         "api/index.php": {
             "runtime": "vercel-php@0.6.0"
@@ -26,7 +25,7 @@
     ],
     "env": {
         "APP_ENV": "production",
-        "APP_DEBUG": "false",
+        "APP_DEBUG": "true",
         "APP_URL": "https://laravel-gsheet.vercel.app",
         "APP_KEY": "base64:OKWQ2iI3Y9HiiwcdQqdWj5zGPcaT7bD6zbQ3coWGcns=",
         "APP_CONFIG_CACHE": "/tmp/config.php",
