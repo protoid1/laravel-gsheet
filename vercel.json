@@ -40,8 +40,12 @@
         "DB_CONNECTION": "sqlite",
         "DB_DATABASE": "/tmp/database.sqlite"
     },
-    "commands": [
-      "composer install --no-dev --optimize-autoloader"
-    ],
+    "build": {
+        "env": {
+            "COMPOSER_ALLOW_SUPERUSER": "1",
+            "COMPOSER_HOME": "/tmp/composer"
+        },
+        "command": "composer install --no-dev --optimize-autoloader"
+    },
     "outputDirectory": "public"
 }
